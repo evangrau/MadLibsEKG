@@ -9,7 +9,14 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    public static final String MESSAGE1 = "";
+    public static final String MESSAGE2 = "";
+    public static final String MESSAGE3 = "";
+    public static final String MESSAGE4 = "";
+    public static final String MESSAGE5 = "";
+    public static final String MESSAGE6 = "";
+    public static final String MESSAGE7 = "";
+    public static final String MESSAGE8 = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,14 +42,14 @@ public class MainActivity extends AppCompatActivity {
                     word6 = editText6.getText().toString(),
                     word7 = editText7.getText().toString(),
                     word8 = editText8.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, word1);
-        intent.putExtra(EXTRA_MESSAGE, word2);
-        intent.putExtra(EXTRA_MESSAGE, word3);
-        intent.putExtra(EXTRA_MESSAGE, word4);
-        intent.putExtra(EXTRA_MESSAGE, word5);
-        intent.putExtra(EXTRA_MESSAGE, word6);
-        intent.putExtra(EXTRA_MESSAGE, word7);
-        intent.putExtra(EXTRA_MESSAGE, word8);
+        intent.putExtra(MESSAGE1, word1);
+        intent.putExtra(MESSAGE2, word2);
+        intent.putExtra(MESSAGE3, word3);
+        intent.putExtra(MESSAGE4, word4);
+        intent.putExtra(MESSAGE5, word5);
+        intent.putExtra(MESSAGE6, word6);
+        intent.putExtra(MESSAGE7, word7);
+        intent.putExtra(MESSAGE8, word8);
         startActivity(intent);
     }
 }
