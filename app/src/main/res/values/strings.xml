@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MadLibsEKG</string>
     <string name="app_title">Mad Libs!</string>
+    <string name="noun">Enter a noun</string>
 </resources>
