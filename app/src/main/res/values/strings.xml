@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">MadLibsEKG</string>
-    <string name="noun">noun</string>
-    <string name="adjective">adjective</string>
     <string name="app_title">Mad Libs!</string>
 </resources>

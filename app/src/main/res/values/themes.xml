@@ -16,4 +16,7 @@
     <style name="CustomTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
 
     </style>
+    <style name="CustomFontStyle" parent="TextAppearance.AppCompat">
+        <item name="fontFamily"></item>
+    </style>
 </resources>
