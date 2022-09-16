@@ -14,14 +14,14 @@ public class MadLibsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mad_libs);
 
         Intent intent = getIntent();
-        String  word1 = intent.getStringExtra(MainActivity.MESSAGE1),
-                word2 = intent.getStringExtra(MainActivity.MESSAGE2),
-                word3 = intent.getStringExtra(MainActivity.MESSAGE3),
-                word4 = intent.getStringExtra(MainActivity.MESSAGE4),
-                word5 = intent.getStringExtra(MainActivity.MESSAGE5),
-                word6 = intent.getStringExtra(MainActivity.MESSAGE6),
-                word7 = intent.getStringExtra(MainActivity.MESSAGE7),
-                word8 = intent.getStringExtra(MainActivity.MESSAGE8);
+        String  word1 = intent.getStringExtra("message1"),
+                word2 = intent.getStringExtra("message2"),
+                word3 = intent.getStringExtra("message3"),
+                word4 = intent.getStringExtra("message4"),
+                word5 = intent.getStringExtra("message5"),
+                word6 = intent.getStringExtra("message6"),
+                word7 = intent.getStringExtra("message7"),
+                word8 = intent.getStringExtra("message8");
 
         TextView    textView1 = findViewById(R.id.textView3),
                     textView2 = findViewById(R.id.textView4),

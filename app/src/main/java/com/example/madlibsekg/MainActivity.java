@@ -6,17 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String MESSAGE1 = "";
-    public static final String MESSAGE2 = "";
-    public static final String MESSAGE3 = "";
-    public static final String MESSAGE4 = "";
-    public static final String MESSAGE5 = "";
-    public static final String MESSAGE6 = "";
-    public static final String MESSAGE7 = "";
-    public static final String MESSAGE8 = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,14 +35,20 @@ public class MainActivity extends AppCompatActivity {
                     word6 = editText6.getText().toString(),
                     word7 = editText7.getText().toString(),
                     word8 = editText8.getText().toString();
-        intent.putExtra(MESSAGE1, word1);
-        intent.putExtra(MESSAGE2, word2);
-        intent.putExtra(MESSAGE3, word3);
-        intent.putExtra(MESSAGE4, word4);
-        intent.putExtra(MESSAGE5, word5);
-        intent.putExtra(MESSAGE6, word6);
-        intent.putExtra(MESSAGE7, word7);
-        intent.putExtra(MESSAGE8, word8);
-        startActivity(intent);
+        if (word1 == "" || word2 == "" || word3 == "" || word4 == "" ||
+        word5 == "" || word6 == "" || word7 == "" || word8 == "") {
+            Toast.makeText(getApplicationContext(), "All eight fields must be filled to proceed.", Toast.LENGTH_LONG).show();
+        }
+        else {
+            intent.putExtra("message1", word1);
+            intent.putExtra("message2", word2);
+            intent.putExtra("message3", word3);
+            intent.putExtra("message4", word4);
+            intent.putExtra("message5", word5);
+            intent.putExtra("message6", word6);
+            intent.putExtra("message7", word7);
+            intent.putExtra("message8", word8);
+            startActivity(intent);
+        }
     }
 }
