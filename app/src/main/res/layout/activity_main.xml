@@ -162,7 +162,6 @@
         android:layout_width="273dp"
         android:layout_height="60dp"
         android:fontFamily="casual"
-        android:onClick="goNext"
         android:text="@string/get_madlib"
         android:textAlignment="center"
         android:textSize="20sp"

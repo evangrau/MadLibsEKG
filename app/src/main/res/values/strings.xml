@@ -3,4 +3,7 @@
     <string name="app_title">Mad Libs!</string>
     <string name="noun">Enter a noun</string>
     <string name="get_madlib">Get your Mad Lib!</string>
+    <string name="placeholder">word</string>
+    <string name="prof_name">Enter the name of a Professor</string>
+    <string name="adjective">Enter an adjective</string>
 </resources>
